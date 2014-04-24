@@ -1,0 +1,10 @@
+"3.7.1 (created: 2013/05/22 20:32:57)
+
+source! /home/adrian/.vimperatorrc.local
+
+" vim: set ft=vimperator:
+set gui=none
+set gui scrollbars=false
+noremap j 5j
+noremap k 5k
+colorscheme flat_dark

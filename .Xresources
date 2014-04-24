@@ -1,0 +1,156 @@
+!!xterm configuration
+!
+!xterm*allowTitleOps: false
+! Use a nice truetype font and size by default... 
+!xterm*faceName: Anonymous Pro:antialias=true
+!xterm*faceSize: 11
+!xterm*VT100.geometry:80x24
+!xterm*title: Terminal
+! Every shell is a login shell by default (for inclusion of all 
+!necessary environment variables)
+!xterm*loginShell: true
+
+! I like a LOT of scrollback...
+!xterm*savelines: 16384
+
+! double-click to select whole URLs :D
+!xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+!xterm*selectToClipboard: true
+!xterm*locale: true
+!xterm*metaSendsEscape: true
+! DOS-box colours...
+!-------------------------------------------------------------------------------
+! Colors
+!
+!*background: #090C19
+!*foreground: #E6E6E6
+!*cursorColor: #1AAA13
+!*color0: #222946
+!*color8: #8C8B89
+!*color1: #B32323
+!*color9: #DC2C2C
+!*color2: #1AAA13
+!*color10: #5DCE33
+!*color3: #FF9F3E
+!*color11: #E6CB29
+!*color4: #4957F3
+!*color12: #4D79FF
+!*color5: #BF3E94
+!*color13: #B641CC
+!*color6: #09A5B3
+!*color14: #3CB6F3
+!*color7: #AEAEAE
+!*color15: #DBDDE4
+
+!xterm*underlineColor: #a5caef
+!xterm*highlightColor: #87afd7
+!xterm*highlightTextColor: #1c1c1c
+
+! right hand side scrollbar...
+!xterm*ScrollBar: true
+!xterm*rightScrollBar: true
+!xterm*vt100.translations: #override \
+!        Shift <KeyPress> Up:      scroll-back(1, line) \n\
+!        Shift <KeyPress> Down:    scroll-forw(1, line) \n\
+!	Ctrl Shift <KeyPress> V:  insert-selection(CLIPBOARD)
+!
+! stop output to terminal from jumping down to bottom of scroll again
+!xterm*scrollTtyOutput: false
+!
+!xterm*ScrollKey: true
+
+!================!
+! URxvt Settings !
+!================!
+
+! For whatever reason, specifying a geometry of 81x27 gives you 80x25
+! URxvt*geometry: 81x27
+URxvt*saveLines: 5500
+URxvt*scrollBar: false
+
+!---------------------------!
+! Transparency / Background !
+!---------------------------!
+
+!URxvt*background:    rgba:1111/1111/1111/aaaa
+URxvt*background:     #181818
+URxvt*foreground:     #c0c0c0
+!URxvt*foreground:    rgb:eeee/eeee/eeee
+URxvt*cursorColor:    #93a1a1
+URxvt*transparent:    false
+!URxvt*tintColor:     Blue
+!URxvt*shading:       10
+URxvt*internalBorder: 0
+!URxvt.borderColor:   #000030
+
+!------!
+! Font !
+!------!
+
+URxvt*font:         xft:DejaVu Sans Mono:pixelsize=14
+URxvt*boldFont:     xft:DejaVu Sans Mono:Bold:pixelsize=14
+
+URxvt.letterSpace: -1
+
+!-----------------!
+! Perl extensions !
+!-----------------!
+
+! TODO
+
+!--------------!
+! Xft Settings !
+!--------------!
+
+! Xft.autohint:  0
+! Xft.hintstyle: hintfull
+! Xft.hinting:   1
+! Xft.antialias: 1
+! Xft.rgba:      rgb
+! Xft.dpi:       96
+
+!=========!
+! Colours !
+!=========!
+
+!-------------------!
+! Black + Dark Grey !
+!-------------------!
+*color0: #121212
+*color8: #2e3436
+!---------------!
+! Red + Dark Red!
+!---------------!
+*color1: #a35b66
+*color9: #ab6b74
+!-------------------!
+! Green + Dark Green!
+!-------------------!
+*color2: #99ab6f
+*color10: #acb972
+!---------------------!
+! Yellow + Dark Yellow!
+!---------------------!
+*color3: #ca9733
+*color11: #ccaa69
+!-----------------!
+! Blue + Dark Blue!
+!-----------------!
+*color4: #495d6e
+*color12: #687987
+!----------------------!
+! Purple + Dark Purple !
+!----------------------!
+*color5: #825969
+*color13: #977381
+!------------------!
+! Cyan + Dark Cyan !
+!------------------!
+*color6: #839191
+*color14: #98a4a4
+!--------------!
+! White + Grey !
+!--------------!
+*color7: #e0e0e0
+*color15: #e5e5e5

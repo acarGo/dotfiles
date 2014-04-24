@@ -1,0 +1,21 @@
+
+./.scripts/change_display.sh &
+
+xrdb -merge ~/.Xresources &
+
+thunar --daemon &
+
+(sleep 4 && feh --bg-fill pictures/wallpapers/wallpaper-2307465.jpg) &
+
+tint2 &
+
+nm-applet &
+
+pidof mpdas >& /dev/null
+if [ $? -ne 0 ]; then
+ mpdas &
+fi
+
+(sleep 4 && conky) &
+
+(sleep 4 && dropboxd) &
